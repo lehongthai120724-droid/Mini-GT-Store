@@ -1,0 +1,335 @@
+/* =========================
+   RESET CƠ BẢN
+   Xóa style mặc định trình duyệt
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   BODY – GIỮ FOOTER Ở CUỐI TRANG
+========================= */
+body {
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER – THANH TRÊN CÙNG
+========================= */
+header {
+  background: #000000;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* =========================
+   MENU LỌC THEO HÃNG XE
+========================= */
+.filter-menu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-menu button {
+  background: #2e1c10;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.filter-menu button:hover {
+  background: #4a2c1a;
+}
+/* Thanh menu chọn hãng */
+.filter-menu {
+  text-align: center;
+  margin: 30px 0 40px; /* trên | trái-phải | dưới */
+}
+/* =========================
+   TIÊU ĐỀ SECTION
+========================= */
+section {
+  padding: 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Tiêu đề danh sách xe */
+.section-title {
+  margin-top: 20px;
+}
+
+/* =========================
+   Ô TÌM KIẾM XE
+========================= */
+.search-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* =========================
+   DANH SÁCH XE (GRID)
+========================= */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+/* ===== Css ảnh xe giúp không bị lỗi ===== */
+.product img {
+  width: 100%;
+  height: 260px;        /* cố định khung */
+  object-fit: contain; /* giữ tỉ lệ, không méo */
+  display: block;
+  background: #d5d5d5; /* nền sáng */
+  padding: 10px;
+}
+/* ===== TRANG CHI TIẾT XE ===== */
+.product-detail {
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+  align-items: center;
+}
+
+/* Ảnh xe chi tiết */
+#detail-image {
+  width: 420px;        /* kích thước ảnh to đều */
+  height: 300px;
+  object-fit: contain; /* KHÔNG méo xe */
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Thông tin bên phải */
+.detail-info {
+  max-width: 400px;
+}
+
+.detail-info h2 {
+  margin-bottom: 10px;
+}
+
+.detail-info p {
+  margin: 6px 0;
+}
+
+.detail-info .price {
+  font-size: 22px;
+  color: #d32f2f;
+  margin: 15px 0;
+}
+
+
+/* =========================
+   THẺ XE (PRODUCT CARD)
+========================= */
+.product-card {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* =========================
+   TÊN XE & GIÁ
+========================= */
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.price {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* =========================
+   Ảnh Xe Trong Giỏ
+========================= */
+.cart-item{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:8px 0;
+  border-bottom:1px solid #000000;
+}
+
+.cart-item img{
+  width:250px;
+  height: 110px;
+  object-fit:contain;
+}
+
+.cart-info h4{
+  font-size:14px;
+  margin:0;
+}
+
+.cart-info p{
+  font-size:13px;
+  margin:2px 0;
+}
+/* =========================
+   Tăng/Giảm
+========================= */
+.qty{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-top:6px;
+}
+
+.qty button{
+  width:32px;
+  height:32px;
+  border:none;
+  background:#000;
+  color:#fff;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:4px;
+}
+
+.qty button:hover{
+  background:#333;
+}
+
+.qty span{
+  min-width:28px;
+  text-align:center;
+  font-weight:bold;
+}
+
+
+/* =========================
+   NÚT BẤM
+========================= */
+button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
+
+/* =========================
+   FOOTER – LUÔN Ở CUỐI TRANG
+========================= */
+footer {
+  margin-top: auto;        /* ĐẨY FOOTER XUỐNG ĐÁY */
+  background: #000000;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.footer-box h3,
+.footer-box h4 {
+  margin-bottom: 10px;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.auth-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .auth-form { display: none; }
+        .auth-form.active { display: block; }
+        .auth-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .toggle-link {
+            text-align: center;
+            margin-top: 15px;
+            cursor: pointer;
+            color: #ff6f61;
+            text-decoration: underline;
+        }
+        /* GIỚI THIỆU ĐỘI NGŨ */
+#gioithieu {
+  padding: 40px;
+  text-align: center;
+}
+
+#gioithieun {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.thanhvien {
+  width: 200px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.thanhvien img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chucvu {
+  color: #777;
+  font-size: 14px;
+}
+
+

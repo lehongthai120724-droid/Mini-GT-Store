@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>GIỎ HÀNG</h1>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+    </nav>
+</header>
+
+<!-- =====GIỎ HÀNG ===== -->
+<section class="cart">
+
+    <!-- Nơi hiển thị danh sách sản phẩm trong giỏ (JS render vào đây) -->
+    <div id="cart-items"></div>
+
+    <!-- Hiển thị tổng tiền -->
+    <h3 id="total"></h3>
+    <!--Tăng/Giảm-->
+    
+
+    <!-- Nút xóa toàn bộ giỏ hàng -->
+    <button onclick="clearCart()">Xóa toàn bộ giỏ hàng</button>
+
+    <!-- Nút thanh toán (mô phỏng) -->
+    <button onclick="checkout()">Thanh toán</button>
+</section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <footer>
+    <div id="footer">
+      <div class="footer-column">
+        <h4>Thông tin liên hệ</h4>
+        <p>Hotline 1: 0986-612-423</p>
+        <p>Hotline 2: 0935-656-603</p>
+      </div>
+      <div class="footer-column">
+        <h4>Địa chỉ</h4>
+        <a href="https://maps.app.goo.gl/hNPSfKMNGxyt5unV8">79 ĐT743, Binh Hoà, Thuận An, Bình Dương, Việt Nam</a>
+      </div>
+      <div class="footer-column">
+        <h4>Thông tin khác</h4>
+        <a href="https://www.facebook.com/bdi.edu.vn">Facebook</a><br />
+        <a href="https://zalo.me/3588207385082038590">Zalo</a><br />
+      </div>
+    </div>
+</footer>
+
+        <!-- Thông tin cửa hàng -->
+        <div class="footer-box">
+            <h3>MINI GT STORE</h3>
+            <p>Chuyên xe mô hình Mini GT tỉ lệ 1:64</p>
+        </div>
+
+        <!-- Thông tin liên hệ -->
+        <div class="footer-box">
+            <h4>Liên hệ</h4>
+            <p>📞 032641****</p>
+            <p>📧 minigt@gmail.com</p>
+            <p>Cty CP TN HTV</p>
+            <p>Lê Hồng Thái, Trương Yến Linh</p>
+        </div>
+
+        <!-- Mạng xã hội -->
+        <div class="footer-box">
+            <h4>Theo dõi</h4>
+            <p>Facebook | Zalo | Instagram</p>
+        </div>
+    </footer>
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

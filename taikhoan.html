@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập & Đăng ký</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+<h1>Mini GT</h1>
+<nav>
+            <a href="taikhoan.html" id="loginLink">Đăng nhập</a>
+<a href="#" id="logoutLink" onclick="return logout()" style="display:none;">Đăng xuất</a>
+
+        </nav>
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="cart.html">Giỏ hàng</a>
+</nav>
+</div>
+</header>
+
+    <div class="auth-container">
+        <div id="loginForm" class="auth-form active">
+            <h2>Đăng nhập</h2>
+            <input type="text" id="loginUser" placeholder="Tên đăng nhập">
+            <input type="password" id="loginPass" placeholder="Mật khẩu">
+            <button onclick="xuLyDangNhap()" style="width: 100%">Đăng nhập</button>
+            <p class="toggle-link" onclick="chuyenForm('registerForm')">Chưa có tài khoản? Đăng ký ngay</p>
+        </div>
+
+        <div id="registerForm" class="auth-form">
+            <h2>Đăng ký</h2>
+            <input type="text" id="regUser" placeholder="Tên đăng nhập mới">
+            <input type="password" id="regPass" placeholder="Mật khẩu">
+            <input type="password" id="regConfirm" placeholder="Xác nhận mật khẩu">
+            <button onclick="xuLyDangKy()" style="width: 100%">Đăng ký</button>
+            <p class="toggle-link" onclick="chuyenForm('loginForm')">Đã có tài khoản? Đăng nhập</p>
+      
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

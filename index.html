@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Mini GT Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>MINI GT</h1>
+<nav>
+  <a href="taikhoan.html" id="loginLink">Đăng nhập</a>
+<a href="#" id="logoutLink" onclick="return logout()">Đăng xuất</a>
+
+        </nav>
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="cart.html">Giỏ hàng</a>
+</nav>
+</div>
+</header>
+<section>
+  
+  <!--Menu-->
+  <button onclick="filterBrand('all')">Tất cả</button>
+<button onclick="filterBrand('porsche')">Porsche</button>
+<button onclick="filterBrand('bmw')">BMW</button>
+<button onclick="filterBrand('mercedes')">Mercedes</button>
+<button onclick="filterBrand('bugatti')">Bugatti</button>
+<button onclick="filterBrand('ford')">Ford</button>
+<button onclick="filterBrand('honda')">Honda</button>
+<button onclick="filterBrand('lamborghini')">Lamborghini</button>
+<button onclick="filterBrand('nissan')">Nissan</button>
+<button onclick="filterBrand('toyota')">Toyota</button>
+<button onclick="filterBrand('mclaren')">McLaren</button>
+
+<h2 class="section-title">DANH SÁCH XE MINI GT</h2>
+<!-- Ô tìm kiếm -->
+<input
+  type="text"
+  id="searchInput"
+  placeholder="Tìm tên xe..."
+  onkeyup="searchProduct()"
+/>
+
+<!-- JS sẽ đổ xe vô đây -->
+<div class="product-list" id="product-list"></div>
+</section>
+<footer class="footer">
+<div class="footer-box">
+<h3>MINI GT STORE</h3>
+<p>Chuyên xe mô hình Mini GT tỉ lệ 1:64</p>
+</div>
+<div class="footer-box">
+  <footer>
+    <div id="footer">
+      <div class="footer-column">
+        <h4>Thông tin liên hệ</h4>
+        <p>Hotline 1: 0986-612-423</p>
+        <p>Hotline 2: 0935-656-603</p>
+      </div>
+      <div class="footer-column">
+        <h4>Địa chỉ</h4>
+        <a href="https://maps.app.goo.gl/hNPSfKMNGxyt5unV8">79 ĐT743, Binh Hoà, Thuận An, Bình Dương, Việt Nam</a>
+      </div>
+      <div class="footer-column">
+        <h4>Thông tin khác</h4>
+        <a href="https://www.facebook.com/bdi.edu.vn">Facebook</a><br />
+        <a href="https://zalo.me/3588207385082038590">Zalo</a><br />
+      </div>
+    </div>
+</footer>
+  <h4>Bản đồ</h4>
+
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.8313326351667!2d106.73750307536106!3d10.900419889256002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d83c1116183d%3A0xfa754495eeb43247!2sBinh%20Duong%20Industry%20College!5e0!3m2!1sen!2s!4v1769480645125!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    width="100%" 
+    height="200" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>                
+
+<div class="footer-box">
+<h4>Liên hệ</h4>
+<p>📞 032641****</p>
+<p>📧 minigt@gmail.com</p>
+<p> Cty CP TNHTV</p>
+<p> Lê Hồng Thái, Trương Yến Linh</p>
+</div>
+
+<div class="footer-box">
+<h4>Theo dõi</h4>
+<p>Facebook | Zalo | Instagram</p>
+</div> 
+</footer>
+<div id="gioithieu">
+        <h2>Đội Phát Triển Và Điều Hành Store </h2>
+        <div id="gioithieun">
+            <div class="thanhvien">
+                <img src="./image/thanhvien/hthai.jpg" alt="Thành viên 1">
+                <h3>Lê Hồng Thái</h3>
+                <p class="chucvu">Nhóm Trưởng</p>
+            </div>
+            <div class="thanhvien">
+                <img src="./image/thanhvien/ylinh.jpg" alt="Thành viên 2">
+                <h3>Trương Yến Linh</h3>
+                <p class="chucvu">Thành viên</p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

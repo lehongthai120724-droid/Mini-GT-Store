@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết xe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  
+    <h1>CHI TIẾT XE</h1>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="cart.html">Giỏ hàng</a>
+    </nav>
+</header>
+
+<!-- ===== KHU VỰC CHI TIẾT SẢN PHẨM ===== -->
+<section class="product-detail">
+
+    <!-- Hình ảnh xe (JS sẽ gán src động) -->
+    <img id="detail-image">
+
+    <!-- Thông tin chi tiết của xe -->
+    <div class="detail-info">
+
+        <!-- Tên xe -->
+        <h2 id="detail-name"></h2>
+
+        <!-- Tỉ lệ xe -->
+        <p id="detail-scale"></p>
+
+        <!-- Chất liệu xe -->
+        <p id="detail-material"></p>
+
+        <!-- Giá xe -->
+        <p class="price" id="detail-price"></p>
+
+        <!-- Nút thêm sản phẩm vào giỏ hàng -->
+        <button onclick="addToCart()">Thêm vào giỏ</button>
+    </div>
+</section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+
+        <!-- Thông tin cửa hàng -->
+        <div class="footer-box">
+            <h3>MINI GT STORE</h3>
+            <p>Chuyên xe mô hình Mini GT tỉ lệ 1:64</p>
+        </div>
+
+        <!-- Thông tin liên hệ -->
+        <div class="footer-box">
+            <h4>Liên hệ</h4>
+            <p>📞 032641****</p>
+            <p>📧 minigt@gmail.com</p>
+            <p>Cty CP TNHTV</p>
+            <p>Lê Hồng Thái, Trương Yến Linh</p>
+        </div>
+
+        <!-- Mạng xã hội -->
+        <div class="footer-box">
+            <h4>Theo dõi</h4>
+            <p>Facebook | Zalo | Instagram</p>
+        </div>
+        <!--Map trường,thông tin liên hệ trường-->
+        <footer>
+    <div id="footer">
+      <div class="footer-column">
+        <h4>Thông tin liên hệ</h4>
+        <p>Hotline 1: 0986-612-423</p>
+        <p>Hotline 2: 0935-656-603</p>
+      </div>
+      <div class="footer-column">
+        <h4>Địa chỉ</h4>
+        <a href="https://maps.app.goo.gl/hNPSfKMNGxyt5unV8">79 ĐT743, Binh Hoà, Thuận An, Bình Dương, Việt Nam</a>
+      </div>
+      <div class="footer-column">
+        <h4>Thông tin khác</h4>
+        <a href="https://www.facebook.com/bdi.edu.vn">Facebook</a><br />
+        <a href="https://zalo.me/3588207385082038590">Zalo</a><br />
+      </div>
+    </div>
+</footer>
+    </footer>
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
