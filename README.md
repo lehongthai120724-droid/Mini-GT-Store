@@ -1,11 +1,10 @@
 # Mini-GT-Store
 
 <img width="550" height="450" alt="Screenshot 2026-01-31 113852" src="https://github.com/user-attachments/assets/777f31a7-f822-4019-835c-cab2ea4ec60b" />
+<img width="550" height="450" alt="Screenshot 2026-01-31 115215" src="https://github.com/user-attachments/assets/1abd4080-d6a2-4833-958b-9e32608000b2" />
 <img width="550" height="450" alt="Screenshot 2026-01-31 113904" src="https://github.com/user-attachments/assets/92033b00-abb6-43e2-ac9e-e37604144e38" />
 <img width="550" height="450" alt="Screenshot 2026-01-31 113919" src="https://github.com/user-attachments/assets/f37e09b5-f184-4f9e-aeff-005c37ad60fa" />
 <img width="550" height="450" alt="Screenshot 2026-01-31 113946" src="https://github.com/user-attachments/assets/d18e910e-9f12-48ee-ad09-0c9b9747a391" />
-<img width="550" height="450" alt="Screenshot 2026-01-31 115215" src="https://github.com/user-attachments/assets/1abd4080-d6a2-4833-958b-9e32608000b2" />
-
 
 index.html
 → Trang chủ, hiển thị danh sách xe, tìm kiếm và lọc theo hãng
