@@ -1,4 +1,7 @@
 # Mini-GT-Store
+
+<img width="1919" height="1128" alt="Screenshot 2026-01-31 113852" src="https://github.com/user-attachments/assets/777f31a7-f822-4019-835c-cab2ea4ec60b" />
+
 index.html
 → Trang chủ, hiển thị danh sách xe, tìm kiếm và lọc theo hãng
 
